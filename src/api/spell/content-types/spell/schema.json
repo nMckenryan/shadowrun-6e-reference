@@ -4,7 +4,8 @@
   "info": {
     "singularName": "spell",
     "pluralName": "spells",
-    "displayName": "Spells"
+    "displayName": "Spells",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
