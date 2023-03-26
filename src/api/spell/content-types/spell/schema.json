@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spells",
+  "info": {
+    "singularName": "spell",
+    "pluralName": "spells",
+    "displayName": "Spells"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "spells"
+    }
+  }
+}
